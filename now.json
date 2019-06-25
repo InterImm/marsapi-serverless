@@ -1,0 +1,10 @@
+{
+    "version": 2,
+    "name": "marsclock",
+    "builds": [
+        { "src": "*.py", "use": "@now/python" , "config": { "maxLambdaSize": "20mb" } }
+    ],
+    "routes": [
+        { "src": "/now", "dest": "/now.py" }
+    ]
+}
