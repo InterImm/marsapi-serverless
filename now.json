@@ -6,5 +6,6 @@
     ],
     "routes": [
         { "src": "/now", "dest": "/now.py" }
-    ]
+    ],
+    "alias": ["marsapi.now.sh", "marsapi.interimm.org"]
 }
