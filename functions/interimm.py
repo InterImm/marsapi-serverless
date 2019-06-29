@@ -126,6 +126,9 @@ class MartianTime():
         :msd float: MSD from Mars24 standard. Will be converted to InterImm standard
         """
 
+        self.interimm_msd = msd - 34242.27180 - 0.73027 + 1 / self._M2E
+        msd = self.interimm_msd
+
         year = 1
         while (msd > (668.0 + MartianTime._is_leap_year_mars(year) ) ):
             year = year + 1
