@@ -1,7 +1,7 @@
 from http.server import HTTPServer
 def serve(handler):
     try:
-        port = 8888
+        port = 8910
         debugserver = HTTPServer(('', port), handler)
         print('Started httpserver on port', port)
         print('http://localhost:' + str(port))
