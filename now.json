@@ -8,5 +8,8 @@
         { "src": "/now", "dest": "/now.py" },
         { "src": "/epoch/(?<epochtime>[^/]*)", "dest": "/epoch.py?epochtime=$epochtime" }
     ],
-    "alias": ["marsapi.now.sh", "marsapi.interimm.org"]
+    "alias": ["marsapi.now.sh", "marsapi.interimm.org"],
+    "github": {
+        "silent": true
+      }
 }
