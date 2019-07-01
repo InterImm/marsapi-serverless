@@ -13,7 +13,8 @@ class handler(BaseHTTPRequestHandler):
         response = {"meta": [
             {"description": "this is the api for marsclock"},
             {"endpoints": [
-                {"path": "now", "description": "current time"}
+                {"path": "now", "description": "current time"},
+                {"path": "epoch/(epoch_time)", "description": "calculate time based on (epoch_time)"}
             ]}
             ]}
         self.wfile.write(json.dumps(response).encode("utf-8"))
