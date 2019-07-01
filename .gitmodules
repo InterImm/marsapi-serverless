@@ -1,0 +1,4 @@
+[submodule "functions/leapseconds"]
+	path = functions/leapseconds
+	url = git@github.com:InterImm/leapseconds.git
+	branch = gh-pages
