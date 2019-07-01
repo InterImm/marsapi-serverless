@@ -5,7 +5,8 @@
         { "src": "*.py", "use": "@now/python" , "config": { "maxLambdaSize": "20mb" } }
     ],
     "routes": [
-        { "src": "/now", "dest": "/now.py" }
+        { "src": "/now", "dest": "/now.py" },
+        { "src": "/epoch/(?<epochtime>[^/]*)", "dest": "/epoch.py?epochtime=$epochtime" }
     ],
     "alias": ["marsapi.now.sh", "marsapi.interimm.org"]
 }
