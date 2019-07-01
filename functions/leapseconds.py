@@ -7,7 +7,7 @@ __location__ = os.path.realpath(
     )
 
 _LEAPSECONDS_JSON_PATH = os.path.join(
-    __location__, 'leapseconds/leapseconds.json'
+    __location__, 'leapseconds.json'
     )
 
 def get_leapseconds():
